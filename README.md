@@ -1,10 +1,10 @@
-Kata de cuenta bancaria (Object Calisthenics)
-=================
+## _Maycol Steven Rincon Bayona_
+
+# Kata de cuenta bancaria (Object Calisthenics)
 
 Piense en la experiencia de su cuenta bancaria personal. En caso de duda, opte por la solución más sencilla
 
-Requisitos
-------------
+## Requisitos
 
 - Depósito y retiro
 - Transferir
@@ -34,21 +34,21 @@ public class Account {
 
 ```java
 public class StartApp {
-	
+
 	public static void main(String[] args) {
 		Account account = new Account(new Statement());
-		
+
 		account.deposit(amountOf(1000), date("10/01/2021"));
 		account.deposit(amountOf(2000), date("13/01/2021"));
 		account.withdrawal(amountOf(500), date("14/01/2021"));
-		
+
 		account.printStatement(System.out);
 	}
 
 }
 ```
-Las reglas
----------
+
+## Las reglas
 
 1. Un nivel de sangría por método
 2. No use la palabra clave ELSE
@@ -64,9 +64,8 @@ Las reglas
 
 - [Object Calistenia pdf] (http://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)
 - Object Calisthenics (libro completo), Jeff Bay en: The ThoughtWorks Anthology.
-Estantería pragmática 2008
+  Estantería pragmática 2008
 - Idea original para el kata: ¿Qué tan orientado a objetos te sientes hoy?
-
 
 ### Ejemplo
 
@@ -76,9 +75,8 @@ Y una retirada de 500 el 14-01-2021
 Cuando imprime su extracto bancario
 Entonces ella vería:
 
-date       | credit   | debit    | balance  
-|---|---|---|---|
-14/01/2021 |          | 500.00   | 2500.00   
-13/01/2021 | 2000.00  |          | 3000.00  
-10/01/2021 | 1000.00  |          | 1000.00   
-
+| date       | credit  | debit  | balance |
+| ---------- | ------- | ------ | ------- |
+| 14/01/2021 |         | 500.00 | 2500.00 |
+| 13/01/2021 | 2000.00 |        | 3000.00 |
+| 10/01/2021 | 1000.00 |        | 1000.00 |
