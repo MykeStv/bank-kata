@@ -27,4 +27,16 @@ public class Statement {
     public static Statement withdraw(DateValue date, Amount withdraw, Amount balance) {
         return new Statement(date, Amount.of(0), withdraw, balance);
     }
+
+    //TOSTRING
+
+    @Override
+    public String toString() {
+        return "Statement{" +
+                "date=" + date +
+                ", deposit=" + deposit +
+                ", withdraw=" + withdraw +
+                ", balance=" + balance +
+                '}';
+    }
 }

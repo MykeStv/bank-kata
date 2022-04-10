@@ -8,8 +8,8 @@ public class DateValue {
     private LocalDate date;
 
     public DateValue(String date) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/YYYY");
-        this.date = LocalDate.parse(date, formatter);
+        //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/YYYY");
+        this.date = LocalDate.parse(date);
     }
 
     public static DateValue of(String date) {

@@ -28,4 +28,13 @@ public class Amount {
     public int amount() {
         return amount;
     }
+
+    //TOSTRING
+
+    @Override
+    public String toString() {
+        return "Amount{" +
+                "amount=" + amount +
+                '}';
+    }
 }

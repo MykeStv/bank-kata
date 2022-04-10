@@ -1,6 +1,7 @@
 import wrappers.Amount;
 import wrappers.DateValue;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Account {
@@ -11,7 +12,8 @@ public class Account {
 
     //CONSTRUCTOR
     public Account() {
-
+        this.balance = Amount.of(0);
+        this.statements = new ArrayList<>();
     }
 
 
@@ -32,5 +34,11 @@ public class Account {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "Account{" +
+                "balance=" + balance +
+                ", statements=" + statements +
+                '}';
+    }
 }
