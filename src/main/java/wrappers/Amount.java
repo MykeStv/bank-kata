@@ -33,8 +33,6 @@ public class Amount {
 
     @Override
     public String toString() {
-        return "Amount{" +
-                "amount=" + amount +
-                '}';
+        return ""+ amount;
     }
 }

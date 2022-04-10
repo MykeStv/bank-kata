@@ -15,4 +15,9 @@ public class DateValue {
     public static DateValue of(String date) {
         return new DateValue(date);
     }
+
+    @Override
+    public String toString() {
+        return "" + date;
+    }
 }

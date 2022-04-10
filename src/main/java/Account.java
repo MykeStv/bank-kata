@@ -34,6 +34,10 @@ public class Account {
 
     }
 
+    public List<Statement> statements() {
+        return statements;
+    }
+
     @Override
     public String toString() {
         return "Account{" +

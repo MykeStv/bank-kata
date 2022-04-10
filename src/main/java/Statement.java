@@ -28,15 +28,19 @@ public class Statement {
         return new Statement(date, Amount.of(0), withdraw, balance);
     }
 
-    //TOSTRING
+    public DateValue date() {
+        return date;
+    }
 
-    @Override
-    public String toString() {
-        return "Statement{" +
-                "date=" + date +
-                ", deposit=" + deposit +
-                ", withdraw=" + withdraw +
-                ", balance=" + balance +
-                '}';
+    public int getDeposit() {
+        return deposit.amount();
+    }
+
+    public int getWithdraw() {
+        return withdraw.amount();
+    }
+
+    public int balance() {
+        return balance.amount();
     }
 }
